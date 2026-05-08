@@ -1,5 +1,6 @@
+// めっちゃシグマ！！
 export default {
   server: {
-    port: 6767
+    port: 6767 
   }
 }
