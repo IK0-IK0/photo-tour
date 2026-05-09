@@ -5,8 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>photo-tour</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&display=swap" rel="stylesheet">
+    <!-- TextAlive App API -->
+    <script src="https://api.textalive.jp/v/2/host.js"></script>
   </head>
   <body>
+    <!-- Loading overlay -->
+    <div id="overlay">
+      <p><span class="far">&#xf254;</span>now loading...</p>
+    </div>
+
+    <!-- Player header with controls and song info -->
+    <div id="header">
+      <div id="control" class="far">
+        <a href="#" id="play" class="disabled">&#xf144;</a>
+        <a href="#" id="stop" class="disabled">&#xf28d;</a>
+      </div>
+      <div id="meta">
+        <div id="artist">artist: <span>-</span></div>
+        <div id="song">song: <span>-</span></div>
+      </div>
+    </div>
+
+    <!-- Audio source -->
+    <div id="media"></div>
+
+    <!-- Lyrics display -->
+    <div id="lyrics">
+      <div id="text"></div>
+      <div id="bar"></div>
+    </div>
+
+    <!-- Seekbar -->
+    <div id="seekbar">
+      <div></div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

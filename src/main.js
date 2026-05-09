@@ -1,12 +1,10 @@
 import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import { setupCamera, setupRenderer, setupControls, setupLighting } from './3deeznuts/setup1.js'
 import { setupScene, updateCubeScale } from './3deeznuts/scene1.js'
-import { setupCameraOverlay, updateCameraOverlay } from './overlay.js'
+import { setupCameraOverlay, updateCameraOverlay } from './uistuff/overlay.js'
+import { player } from './uistuff/player.js'
 
-// Initialize
+// Initialize 3D scene
 const scene = setupScene()
 const camera = setupCamera()
 const renderer = setupRenderer()

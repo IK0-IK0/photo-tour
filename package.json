@@ -12,6 +12,8 @@
     "vite": "^8.0.10"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "textalive-app-api": "^0.4.0",
     "three": "^0.184.0"
   }
 }
